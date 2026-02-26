@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class MapHUDManager {
 
-    private static final long UPDATE_PERIOD_TICKS = 4L;
+    private static final long UPDATE_PERIOD_TICKS = 20L;
 
     private final ScoreboardLibrary scoreboardLibrary;
     private final PluginConfig config;
