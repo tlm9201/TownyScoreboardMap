@@ -1,0 +1,48 @@
+# TownyScoreboardMap Configuration
+# All text values use MiniMessage format: https://docs.advntr.dev/minimessage/format.html
+
+messages:
+  hud:
+    enabled: "<green>Map HUD enabled."
+    disabled: "<red>Map HUD disabled."
+  command:
+    player-only: "<red>Only players can use this command."
+    invalid-size: "<red>Invalid map size. Use <yellow>small</yellow> or <yellow>big</yellow>."
+
+map:
+  title: "Minimap"
+
+  small:
+    subtitle: "<red>-5         N         5"
+  big:
+    subtitle: "<red>-6           N            6"
+
+  color:
+    # Color for the player's current position
+    player: "<gold>"
+    # Color for plots owned by the player
+    player-owned: "<yellow>"
+    # Color for plots in the player's own town
+    own-town: "<green>"
+    # Color for plots in an allied nation
+    ally: "<green>"
+    # Color for plots in an enemy nation
+    enemy: "<red>"
+    # Color for unowned/neutral town plots
+    neutral: "<white>"
+    # Color for wilderness tiles
+    wilderness: "<gray>"
+
+  symbol:
+    claim: "▓"
+    # Symbol for the player's current position
+    player: "┼"
+    # Symbol for home blocks
+    home-block: "╫"
+    # Symbol for outpost plots
+    outpost: "╧"
+    # Symbol for plots that are for sale
+    for-sale: "▒"
+    # Symbol for wilderness tiles
+    wilderness: "▒"
+

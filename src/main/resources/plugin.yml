@@ -1,0 +1,7 @@
+name: "$name"
+version: "$version"
+main: timo.townyscoreboardmap.TownyScoreboardMap
+api-version: 1.21.11
+author: tlm920
+depends: [Towny]
+folia-supported: true
