@@ -77,8 +77,6 @@ public class TownyScoreboardMap extends JavaPlugin implements Listener {
         hudManager.remove(event.getPlayer());
     }
 
-
-
     public static TownyScoreboardMap getInstance() {
         return instance;
     }

@@ -90,8 +90,9 @@ public class MapHUD {
             x = 0;
             for (int tbx = wcZ - halfHeight; tbx <= wcZ + (mapHeight - halfHeight - 1); tbx++) {
                 WorldCoord worldCoord = new WorldCoord(world, tby, tbx);
-                if (worldCoord.hasTownBlock())
-                    mapTownBlock(resident, map, x, y, worldCoord.getTownBlockOrNull());
+                TownBlock townBlock = null;
+                if (worldCoord.hasTownBlock() && (townBlock = worldCoord.getTownBlockOrNull()) != null)
+                    mapTownBlock(resident, map, x, y, townBlock);
                 else
                     mapWilderness(map, x, y, worldCoord);
                 x++;
